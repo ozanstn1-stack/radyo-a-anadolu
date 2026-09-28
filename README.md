@@ -1,6 +1,11 @@
 # 📻 Radyo A • 100.5 FM | Anadolu Üniversitesi Web Platformu
 
-Anadolu Üniversitesi **İletişim Bilimleri Fakültesi** bünyesinde 1997 yılından bu yana yayın yapan Türkiye'nin köklü üniversite radyosu **Radyo A (100.5 FM)** için tasarlanmış özel, modern ve interaktif web platformu.
+[![Canlı Yayında](https://img.shields.io/badge/Canl%C4%B1%20Web%20Sitesi-Yay%C4%B1nda-red?style=for-the-badge&logo=google-chrome)](https://ozanstn1-stack.github.io/radyo-a-anadolu/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-brightgreen?style=for-the-badge&logo=github)](https://ozanstn1-stack.github.io/radyo-a-anadolu/)
+
+🌐 **Canlı Web Sitesi Adresi:** [https://ozanstn1-stack.github.io/radyo-a-anadolu/](https://ozanstn1-stack.github.io/radyo-a-anadolu/)
+
+Anadolu Üniversitesi **İletişim Bilimleri Fakültesi** bünyesinde 1997 yılından bu yana aralıksız yayın yapan Türkiye'nin köklü üniversite radyosu **Radyo A (100.5 FM)** için özel olarak tasarlanıp geliştirilen modern, interaktif ve profesyonel web platformu.
 
 ![Radyo A Stüdyosu](assets/images/studio.jpg)
 
