@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radyo A • 100.5 FM | Anadolu Üniversitesi'nin Sesi</title>
+  <meta name="description" content="Anadolu Üniversitesi'nin resmi radyosu Radyo A 100.5 FM. Eskişehir'in ve üniversite gençliğinin özgür sesi. Canlı radyo dinle, yayın akışı, podcastler ve istek hattı.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigasyon
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo & Marka -->
+        <a href="#player-section" class="nav-brand">
+          <img src="assets/images/logo.jpg" alt="Radyo A Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <h1>RADYO <span>A</span></h1>
+            <span class="brand-tagline">Anadolu Üniversitesi • 100.5 FM</span>
+          </div>
+        </a>
+
+        <!-- Menü Bağlantıları -->
+        <div class="nav-menu" id="nav-menu-links">
+          <a href="#player-section" class="nav-link active">Canlı Dinle</a>
+          <a href="#tuner-anchor" class="nav-link">FM Frekans Ayarı</a>
+          <a href="#schedule-section" class="nav-link">Yayın Akışı</a>
+          <a href="#podcasts-section" class="nav-link">Podcastler</a>
+          <a href="#top10-section" class="nav-link">Top 10</a>
+          <a href="#request-section" class="nav-link">İstek Hattı</a>
+          <a href="#about-section" class="nav-link">Hakkımızda</a>
+        </div>
+
+        <!-- Sağ Aksiyonlar -->
+        <div class="nav-actions">
+          <div class="status-frequency-badge" title="Eskişehir Karasal Yayın Frekansı">
+            <span class="pulse-dot-red"></span>
+            <span>100.5 FM</span>
+          </div>
+
+          <button id="theme-toggle-btn" class="btn-icon" title="Temayı Değiştir (Stüdyo / Kampüs)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+
+          <a href="#request-section" class="btn-primary-request">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>İstek Gönder</span>
+          </a>
+
+          <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Menüyü Aç/Kapat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Bölümü & Stüdyo Master Kontrol Paneli
+       ======================================================================== -->
+  <main>
+    <section class="hero-section" id="player-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Sol Sütun: Başlık ve Dinamik Canlı Program Kartı -->
+          <div class="hero-left-content">
+            <div class="hero-badge-tag">
+              <span class="badge-dot-live"></span>
+              <span>Anadolu Üniversitesi İletişim Bilimleri Fakültesi</span>
+            </div>
+
+            <h2 class="hero-title">
+              Üniversitenin ve Şehrin Özgür Sesi: <br>
+              <span class="text-gradient-red">Radyo A 100.5 FM</span>
+            </h2>
+
+            <p class="hero-subtitle">
+              1997'den bugüne Yunus Emre Kampüsü'nden Eskişehir semalarına ve tüm dünyaya yayılan bağımsız müzik, kültür-sanat, kampüs dinamizmi ve gençliğin ritmi.
+            </p>
+
+            <!-- Dinamik "Şu An Yayında" Kartı -->
+            <div class="hero-now-playing-card">
+              <div class="card-top-row">
+                <div class="live-on-air-box on-air-indicator">
+                  <span class="sign-dot"></span>
+                  <span>ŞU AN YAYINDA</span>
+                </div>
+                <span class="card-tag" id="now-playing-tag">Müzik & Kültür</span>
+              </div>
+
+              <h3 class="card-prog-title" id="now-playing-title">Gündoğumu & Sabah Kahvesi</h3>
+              <div class="card-prog-host" id="now-playing-host">Sunucu: Deniz Yılmaz & Caner Kurt</div>
+              <p class="card-prog-desc" id="now-playing-desc">
+                Eskişehir'de yeni güne uyanırken akustik ezgiler, hava durumu ve kampüsten güncel gelişmeler.
+              </p>
+
+              <!-- İlerleme Çubuğu -->
+              <div class="card-progress-bar">
+                <div class="progress-fill" id="now-playing-progress-fill"></div>
+              </div>
+
+              <div class="card-footer-meta">
+                <span id="now-playing-time">08:00 - 10:00</span>
+                <span id="next-program-teaser">Sırada: 10:00 - Kampüs Havadisleri</span>
+              </div>
+            </div>
+
+            <!-- CTA Butonları -->
+            <div class="hero-cta-buttons">
+              <button class="btn-hero-play" id="hero-quick-play">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Canlı Dinle (100.5 FM)</span>
+              </button>
+
+              <a href="#schedule-section" class="btn-hero-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Haftalık Yayın Akışı</span>
+              </a>
+
+              <button class="btn-hero-secondary" id="btn-play-jingle" title="Radyo A stüdyo jingle'ını çal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span>İstasyon Jingle</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sağ Sütun: Profesyonel Stüdyo Master Konsolu & Analog Tuner -->
+          <div class="studio-console-wrapper">
+            <div class="studio-console-deck">
+              
+              <!-- Konsol Metal Üst Çıta -->
+              <div class="console-metal-strip">
+                <span class="deck-model-tag">ANADOLU UNIVERSITY BROADCAST DECK • SERIES-A</span>
+                <div class="deck-on-air-sign on-air-indicator">
+                  <span class="sign-dot"></span>
+                  <span>ON AIR</span>
+                </div>
+              </div>
+
+              <!-- Çift Analog İbreli VU Metre (Sol / Sağ Kanal) -->
+              <div class="vu-meters-cluster">
+                <!-- Sol Kanal -->
+                <div class="vu-meter-box">
+                  <div class="vu-glass-sheen"></div>
+                  <div class="vu-scale">
+                    <div class="vu-scale-ticks">
+                      <span>-20</span>
+                      <span>-10</span>
+                      <span>-5</span>
+                      <span>0</span>
+                      <span class="red-zone">+3dB</span>
+                    </div>
+                    <svg class="vu-arc-svg" viewBox="0 0 100 35">
+                      <path d="M 10 32 A 45 45 0 0 1 90 32" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="2,2"/>
+                      <path d="M 72 13 A 45 45 0 0 1 90 32" fill="none" stroke="#EF4444" stroke-width="2.5"/>
+                    </svg>
+                  </div>
+                  <div class="vu-needle" id="vu-needle-left"></div>
+                  <div class="vu-pivot"></div>
+                  <div class="vu-channel-label">CH 1 • LEFT (dB)</div>
+                </div>
+
+                <!-- Sağ Kanal -->
+                <div class="vu-meter-box">
+                  <div class="vu-glass-sheen"></div>
+                  <div class="vu-scale">
+                    <div class="vu-scale-ticks">
+                      <span>-20</span>
+                      <span>-10</span>
+                      <span>-5</span>
+                      <span>0</span>
+                      <span class="red-zone">+3dB</span>
+                    </div>
+                    <svg class="vu-arc-svg" viewBox="0 0 100 35">
+                      <path d="M 10 32 A 45 45 0 0 1 90 32" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="2,2"/>
+                      <path d="M 72 13 A 45 45 0 0 1 90 32" fill="none" stroke="#EF4444" stroke-width="2.5"/>
+                    </svg>
+                  </div>
+                  <div class="vu-needle" id="vu-needle-right"></div>
+                  <div class="vu-pivot"></div>
+                  <div class="vu-channel-label">CH 2 • RIGHT (dB)</div>
+                </div>
+              </div>
+
+              <!-- Gerçek Zamanlı Canvas Spektrum Görselleştirici -->
+              <div class="visualizer-canvas-container">
+                <canvas id="visualizer-canvas"></canvas>
+                <div class="canvas-frequency-labels">
+                  <span>60Hz</span>
+                  <span>250Hz</span>
+                  <span>1kHz</span>
+                  <span>4kHz</span>
+                  <span>16kHz</span>
+                </div>
+              </div>
+
+              <!-- Master Oynatıcı Kontrolleri -->
+              <div class="master-controls-cluster">
+                <!-- Büyük Oynat/Durdur Düğmesi -->
+                <button class="play-center-btn" id="master-play-btn" title="Canlı Yayını Başlat / Durdur">
+                  <span id="master-play-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </span>
+                </button>
+
+                <!-- Ses Düzeyi & Mute -->
+                <div class="volume-cluster">
+                  <button class="btn-icon" id="btn-mute" title="Sesi Kapat / Aç">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.01" value="0.85" title="Ses Düzeyi">
+                </div>
+
+                <!-- Yayın Kaynağı Seçici -->
+                <select id="stream-source-select" class="stream-select-dropdown" title="Yayın Akış Kanalı"></select>
+              </div>
+
+              <!-- Yükleniyor Göstergesi -->
+              <div class="buffering-badge" id="player-buffering-badge">
+                <div class="spinner-mini"></div>
+                <span class="buffering-text">Canlı stüdyo akışına bağlanılıyor...</span>
+              </div>
+
+              <!-- Yayın Durum / Hata Bildirim Çubuğu -->
+              <div id="stream-notice-banner" class="stream-notice-bar"></div>
+
+              <!-- ==========================================================
+                   İnteraktif Analog FM Radyo Ayarlayıcısı (Tuner)
+                   ========================================================== -->
+              <div class="tuner-section-wrapper" id="tuner-anchor">
+                <div class="tuner-header-row">
+                  <!-- Dijital LCD Frekans Ekranı -->
+                  <div class="digital-lcd-meter">
+                    <span class="digital-freq-num" id="digital-freq-num">100.5</span>
+                    <span class="digital-freq-unit">MHz FM</span>
+                  </div>
+
+                  <!-- Tuner Göstergeleri: Stereo & Sinyal Gücü -->
+                  <div class="tuner-indicators">
+                    <div class="indicator-item" title="Stereo Sinyal Kilidi">
+                      <span class="led-indicator active-stereo" id="stereo-indicator-led"></span>
+                      <span>STEREO</span>
+                    </div>
+
+                    <div class="indicator-item" title="Sinyal Kalitesi">
+                      <span>SİNYAL:</span>
+                      <div class="signal-bar-wrap">
+                        <div class="signal-bar-fill" id="signal-strength-bar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FM Kaydırma Çubuğu (Dial) -->
+                <div class="fm-dial-container">
+                  <input type="range" class="fm-dial-slider" id="fm-slider" min="88.0" max="108.0" step="0.1" value="100.5">
+                  <div class="fm-scale-ticks">
+                    <span>88</span>
+                    <span data-station-freq="89.0" style="cursor:pointer;" title="89.0 TRT FM">89</span>
+                    <span>92</span>
+                    <span>95</span>
+                    <span data-station-freq="98.4" style="cursor:pointer;" title="98.4 Best FM">98.4</span>
+                    <span class="scale-mark mark-radyo-a" data-station-freq="100.5" style="cursor:pointer;" title="★ 100.5 RADYO A (Anadolu Üniversitesi)">100.5★</span>
+                    <span data-station-freq="103.0" style="cursor:pointer;" title="103.0 Meteoroloji">103</span>
+                    <span>106</span>
+                    <span>108</span>
+                  </div>
+                </div>
+
+                <!-- Tuner Alt Bilgi & Kilit Butonu -->
+                <div class="tuner-presets-row">
+                  <div id="active-station-display" class="tuner-badge badge-active">
+                    <span class="badge-dot-live"></span>
+                    <strong>RADYO A</strong> • Anadolu Üniversitesi (100.5 FM)
+                  </div>
+                  <button id="btn-auto-tune" class="btn-lock-tune" title="Doğrudan 100.5 FM Radyo A'ya kilitle">
+                    100.5 MHz Otomatik Kilitle
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Canlı İstek & Stüdyo Mesaj Ticker Bölümü
+         ======================================================================== -->
+    <section class="studio-ticker-section">
+      <div class="container">
+        <div class="ticker-title-row">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Stüdyo Masası: Son İstekler ve Dinleyici Mesajları
+          </h3>
+          <a href="#request-section" style="font-size:0.86rem; color:var(--brand-amber); font-weight:700;">+ İstek Parça Gönder</a>
+        </div>
+
+        <div class="ticker-grid" id="studio-requests-feed">
+          <!-- Dinamik olarak RequestSystem tarafından doldurulur -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Haftalık Yayın Akışı (Weekly Schedule)
+         ======================================================================== -->
+    <section class="schedule-section" id="schedule-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Haftalık Program Takvimi</span>
+          <h2 class="section-title">Radyo A Yayın Akışı</h2>
+          <p class="section-desc">
+            Sabahın ilk ışıklarından gece nöbetine kadar Anadolu Üniversitesi öğrencilerinin ve alanında uzman akademisyenlerin hazırladığı zengin yayın içeriği.
+          </p>
+        </div>
+
+        <!-- Gün Sekmeleri ve Kategori Filtresi -->
+        <div class="schedule-controls">
+          <div class="days-tabs-wrapper" id="schedule-days-tabs">
+            <!-- JS tarafından gün sekmeleri render edilir -->
+          </div>
+
+          <select class="schedule-category-select" id="schedule-category-filter" title="Kategoriye Göre Filtrele">
+            <option value="all">Tüm Kategoriler</option>
+            <option value="Müzik">Müzik</option>
+            <option value="Kültür-Sanat">Kültür & Sanat</option>
+            <option value="Kampüs">Kampüs & Gençlik</option>
+            <option value="Akademi">Akademi & Bilim</option>
+            <option value="Spor">Spor</option>
+          </select>
+        </div>
+
+        <!-- Program Listesi -->
+        <div class="schedule-programs-container" id="schedule-programs-list">
+          <!-- JS tarafından doldurulur -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Top 10 Listesi & Podcast Arşivi (Öne Çıkanlar)
+         ======================================================================== -->
+    <section class="featured-split-section" id="top10-section">
+      <div class="container">
+        <div class="featured-split-grid">
+          
+          <!-- Sol: Haftanın Anadolu Top 10 Şarkısı -->
+          <div class="featured-col">
+            <div class="block-title-row">
+              <div>
+                <span class="section-tag">Öğrenci Oylarıyla</span>
+                <h3 style="font-size: 1.6rem;">Haftanın Top 10'u</h3>
+              </div>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Her Cuma 20:00 Geri Sayım</span>
+            </div>
+
+            <div class="top10-list-wrap" id="top10-list-container">
+              <!-- JS tarafından render edilir -->
+            </div>
+          </div>
+
+          <!-- Sağ: Stüdyo Podcast Arşivi -->
+          <div class="featured-col" id="podcasts-section">
+            <div class="block-title-row">
+              <div>
+                <span class="section-tag">Kaçıranlar İçin</span>
+                <h3 style="font-size: 1.6rem;">Podcast & Kayıtlar</h3>
+              </div>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Özel Stüdyo Söyleşileri</span>
+            </div>
+
+            <div class="podcasts-grid" id="podcasts-grid-container">
+              <!-- JS tarafından render edilir -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         İstek Hattı & Stüdyo Mesaj Formu
+         ======================================================================== -->
+    <section class="request-form-section" id="request-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Canlı Yayına Katıl</span>
+          <h2 class="section-title">Stüdyoya İstek & Mesaj Gönder</h2>
+          <p class="section-desc">
+            Sevdiğin şarkıyı iste, kampüsteki arkadaşlarına selam gönder veya stüdyodaki DJ ekibimize duygu ve düşüncelerini ilet.
+          </p>
+        </div>
+
+        <div class="request-form-card">
+          <form id="song-request-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="req-name" class="form-label">Adınız Soyadınız / Rumuz *</label>
+                <input type="text" id="req-name" class="form-input" placeholder="Örn: Caner K." required>
+              </div>
+
+              <div class="form-group">
+                <label for="req-dept" class="form-label">Fakülte / Bölüm veya Şehir</label>
+                <input type="text" id="req-dept" class="form-input" placeholder="Örn: İletişim Fakültesi / Eskişehir">
+              </div>
+
+              <div class="form-group full-width">
+                <label for="req-song-title" class="form-label">İstediğiniz Şarkı ve Sanatçı *</label>
+                <input type="text" id="req-song-title" class="form-input" placeholder="Örn: Mor ve Ötesi - Cambaz" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="req-message" class="form-label">Stüdyo Mesajınız & Notunuz</label>
+                <textarea id="req-message" class="form-textarea" rows="3" placeholder="Kütüphanede ders çalışanlara, arkadaşlarına ya da yayın ekibine iletmek istediğin not..."></textarea>
+              </div>
+            </div>
+
+            <div id="req-feedback"></div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn-primary-request">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>İsteği Miksere İlet</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Hakkımızda & Tarihçe Bölümü
+         ======================================================================== -->
+    <section class="about-history-section" id="about-section">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-img-wrap">
+            <img src="assets/images/studio.jpg" alt="Radyo A Canlı Yayın Stüdyosu" class="about-studio-img">
+            <div class="about-experience-badge">
+              <strong>1997</strong>
+              <span>Yılından Beri Yayında</span>
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <span class="section-tag">Köklü Bir Radyoculuk Geleneği</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Türkiye'nin Öncü Üniversite Radyosu</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">
+              Anadolu Üniversitesi <strong>İletişim Bilimleri Fakültesi</strong> bünyesinde kurulan <strong>Radyo A (100.5 FM)</strong>, gençlerin kuramsal bilgilerini pratik yayıncılık deneyimiyle harmanladığı, ticari kaygılardan uzak, evrensel ve özgür bir yayın platformudur.
+            </p>
+
+            <div class="about-milestones">
+              <div class="milestone-item">
+                <span class="ms-year">1997</span>
+                <div class="ms-text">
+                  <h4>Yunus Emre Kampüsü'nde İlk Frekans</h4>
+                  <p>Eskişehir semalarında test yayınlarını tamamlayarak Türkiye'nin ilk kurumsal üniversite radyolarından biri olarak hayata geçti.</p>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <span class="ms-year">2000'ler</span>
+                <div class="ms-text">
+                  <h4>Kültür, Sanat ve Alternatif Müzik Kalesi</h4>
+                  <p>Uluslararası Eskişehir Festivali, film festivalleri ve sayısız müzisyenin canlı konserlerine ev sahipliği yaptı.</p>
+                </div>
+              </div>
+
+              <div class="milestone-item">
+                <span class="ms-year">Günümüz</span>
+                <div class="ms-text">
+                  <h4>Dijital Dünyada 24/7 Kesintisiz Yayın</h4>
+                  <p>Karasal 100.5 FM yayınının yanı sıra web, mobil ve podcast yayınlarıyla tüm dünyadaki mezunlarına ve dinleyicilerine ulaşıyor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer (Alt Bilgi)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-col">
+          <div class="nav-brand" style="margin-bottom: 14px;">
+            <img src="assets/images/logo.jpg" alt="Radyo A" class="brand-logo-img" style="width: 44px; height: 44px;">
+            <div class="brand-text">
+              <h2 style="font-size: 1.25rem;">RADYO <span style="color: var(--brand-crimson);">A</span></h2>
+              <span class="brand-tagline">100.5 MHz • Eskişehir</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; max-width: 320px;">
+            Anadolu Üniversitesi İletişim Bilimleri Fakültesi Yunus Emre Kampüsü 26470 Tepebaşı / Eskişehir
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="#player-section">Canlı Dinle</a></li>
+            <li><a href="#schedule-section">Yayın Akışı</a></li>
+            <li><a href="#podcasts-section">Podcast Kayıtları</a></li>
+            <li><a href="#top10-section">Haftanın Top 10'u</a></li>
+            <li><a href="#request-section">İstek Hattı</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Karasal Frekanslar</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--brand-amber); font-weight:700;">100.5 MHz</span> • Eskişehir Merkez</li>
+            <li><span style="color: var(--text-muted);">Yunus Emre Kampüsü Vericisi</span></li>
+            <li><span style="color: var(--text-muted);">Yayın Gücü: 5 kW Stereo</span></li>
+            <li><a href="http://canli.radyoa.anadolu.edu.tr:44445/Radyo_A_MP3" target="_blank" rel="noopener">Doğrudan Akış (Icecast)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stüdyo İletişim</h4>
+          <ul class="footer-links">
+            <li><strong>Telefon:</strong> +90 (222) 335 05 80</li>
+            <li><strong>E-Posta:</strong> radyoa@anadolu.edu.tr</li>
+            <li><strong>WhatsApp İstek:</strong> 0542 100 50 00</li>
+            <li><a href="https://anadolu.edu.tr" target="_blank" rel="noopener">anadolu.edu.tr</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Radyo A</strong> • Anadolu Üniversitesi İletişim Bilimleri Fakültesi. Tüm hakları saklıdır.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <span>Türkiye'nin İlk Üniversite Radyolarından Biri</span>
+          <span>•</span>
+          <span>Eskişehir'in Ritmi</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
