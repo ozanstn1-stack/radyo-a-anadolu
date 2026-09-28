@@ -765,6 +765,12 @@ a {
   color: #7DD3FC;
 }
 
+.notice-success {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34D399;
+}
+
 .btn-notice-action {
   background: rgba(255, 255, 255, 0.2);
   border: none;

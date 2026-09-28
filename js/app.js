@@ -230,6 +230,13 @@ class App {
             banner.style.display = 'none';
           });
         }
+        if (type === 'success') {
+          setTimeout(() => {
+            if (banner && banner.className.includes('notice-success')) {
+              banner.style.display = 'none';
+            }
+          }, 4000);
+        }
       }
     });
   }
